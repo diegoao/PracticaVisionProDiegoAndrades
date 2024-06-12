@@ -38,7 +38,7 @@
 		527C8A9B2C1A399400B5F59B /* HeroesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C8A902C1A399400B5F59B /* HeroesView.swift */; };
 		527C8A9C2C1A399400B5F59B /* HerosRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C8A912C1A399400B5F59B /* HerosRowView.swift */; };
 		527C8A9E2C1A39EA00B5F59B /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C8A9D2C1A39EA00B5F59B /* ViewRouter.swift */; };
-		527C8AA02C1A39F300B5F59B /* IOS_SwiftUI_DiegoAndradesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C8A9F2C1A39F300B5F59B /* IOS_SwiftUI_DiegoAndradesApp.swift */; };
+		527C8AA62C1A3E0C00B5F59B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 527C8AA42C1A3E0C00B5F59B /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,7 +85,8 @@
 		527C8A902C1A399400B5F59B /* HeroesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroesView.swift; sourceTree = "<group>"; };
 		527C8A912C1A399400B5F59B /* HerosRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerosRowView.swift; sourceTree = "<group>"; };
 		527C8A9D2C1A39EA00B5F59B /* ViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
-		527C8A9F2C1A39F300B5F59B /* IOS_SwiftUI_DiegoAndradesApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOS_SwiftUI_DiegoAndradesApp.swift; sourceTree = "<group>"; };
+		527C8AA52C1A3E0C00B5F59B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		527C8AA72C1A3E3500B5F59B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,12 +136,12 @@
 				527C8A802C1A397D00B5F59B /* Data */,
 				527C8A412C1A371100B5F59B /* PracticaVisionProDiegoAndradesApp.swift */,
 				527C8A432C1A371100B5F59B /* ContentView.swift */,
-				527C8A9F2C1A39F300B5F59B /* IOS_SwiftUI_DiegoAndradesApp.swift */,
 				527C8A9D2C1A39EA00B5F59B /* ViewRouter.swift */,
 				527C8A452C1A371100B5F59B /* ImmersiveView.swift */,
 				527C8A472C1A371400B5F59B /* Assets.xcassets */,
 				527C8A4C2C1A371400B5F59B /* Info.plist */,
 				527C8A492C1A371400B5F59B /* Preview Content */,
+				527C8AA42C1A3E0C00B5F59B /* Localizable.strings */,
 			);
 			path = PracticaVisionProDiegoAndrades;
 			sourceTree = "<group>";
@@ -368,6 +369,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 527C8A312C1A371100B5F59B;
 			packageReferences = (
@@ -389,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				527C8A4B2C1A371400B5F59B /* Preview Assets.xcassets in Resources */,
+				527C8AA62C1A3E0C00B5F59B /* Localizable.strings in Resources */,
 				527C8A482C1A371400B5F59B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,7 +418,6 @@
 				527C8A962C1A399400B5F59B /* HerosViewModel.swift in Sources */,
 				527C8A442C1A371100B5F59B /* ContentView.swift in Sources */,
 				527C8A712C1A397200B5F59B /* HerosRepositoryProtocol.swift in Sources */,
-				527C8AA02C1A39F300B5F59B /* IOS_SwiftUI_DiegoAndradesApp.swift in Sources */,
 				527C8A972C1A399400B5F59B /* SeriesViewModel.swift in Sources */,
 				527C8A722C1A397200B5F59B /* SeriesRepositoryProtocol.swift in Sources */,
 				527C8A872C1A397D00B5F59B /* SeriesRepository.swift in Sources */,
@@ -455,12 +457,25 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		527C8AA42C1A3E0C00B5F59B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				527C8AA52C1A3E0C00B5F59B /* en */,
+				527C8AA72C1A3E3500B5F59B /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		527C8A572C1A371400B5F59B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -524,6 +539,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

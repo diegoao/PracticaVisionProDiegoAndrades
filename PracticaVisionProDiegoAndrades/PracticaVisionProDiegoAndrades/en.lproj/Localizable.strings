@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  PracticaVisionProDiegoAndrades
+
+  Created by Macbook Pro on 12/6/24.
+  
+*/
+
+/// Traducciones en ingles
+"title1" = "LIST OF HEROES";
+"title2" = "HERO DETAIL";
+"Description" = "DESCRIPTION";
+"notdescription" = "This hero has no description";
+"back" = "Back";
+"notseries" = "There are no series";
