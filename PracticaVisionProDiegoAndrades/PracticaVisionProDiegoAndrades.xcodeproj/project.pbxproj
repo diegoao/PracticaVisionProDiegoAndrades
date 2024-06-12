@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		527C8A402C1A371100B5F59B /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 527C8A3F2C1A371100B5F59B /* RealityKitContent */; };
+		527C8A422C1A371100B5F59B /* PracticaVisionProDiegoAndradesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C8A412C1A371100B5F59B /* PracticaVisionProDiegoAndradesApp.swift */; };
+		527C8A442C1A371100B5F59B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C8A432C1A371100B5F59B /* ContentView.swift */; };
+		527C8A462C1A371100B5F59B /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C8A452C1A371100B5F59B /* ImmersiveView.swift */; };
+		527C8A482C1A371400B5F59B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527C8A472C1A371400B5F59B /* Assets.xcassets */; };
+		527C8A4B2C1A371400B5F59B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527C8A4A2C1A371400B5F59B /* Preview Assets.xcassets */; };
+		527C8A562C1A371400B5F59B /* PracticaVisionProDiegoAndradesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C8A552C1A371400B5F59B /* PracticaVisionProDiegoAndradesTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		527C8A522C1A371400B5F59B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 527C8A322C1A371100B5F59B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 527C8A392C1A371100B5F59B;
+			remoteInfo = PracticaVisionProDiegoAndrades;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		527C8A3A2C1A371100B5F59B /* PracticaVisionProDiegoAndrades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticaVisionProDiegoAndrades.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		527C8A3E2C1A371100B5F59B /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		527C8A412C1A371100B5F59B /* PracticaVisionProDiegoAndradesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticaVisionProDiegoAndradesApp.swift; sourceTree = "<group>"; };
+		527C8A432C1A371100B5F59B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		527C8A452C1A371100B5F59B /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
+		527C8A472C1A371400B5F59B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		527C8A4A2C1A371400B5F59B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		527C8A4C2C1A371400B5F59B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		527C8A512C1A371400B5F59B /* PracticaVisionProDiegoAndradesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticaVisionProDiegoAndradesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		527C8A552C1A371400B5F59B /* PracticaVisionProDiegoAndradesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticaVisionProDiegoAndradesTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		527C8A372C1A371100B5F59B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				527C8A402C1A371100B5F59B /* RealityKitContent in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		527C8A4E2C1A371400B5F59B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		527C8A312C1A371100B5F59B = {
+			isa = PBXGroup;
+			children = (
+				527C8A3C2C1A371100B5F59B /* PracticaVisionProDiegoAndrades */,
+				527C8A3D2C1A371100B5F59B /* Packages */,
+				527C8A542C1A371400B5F59B /* PracticaVisionProDiegoAndradesTests */,
+				527C8A3B2C1A371100B5F59B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		527C8A3B2C1A371100B5F59B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				527C8A3A2C1A371100B5F59B /* PracticaVisionProDiegoAndrades.app */,
+				527C8A512C1A371400B5F59B /* PracticaVisionProDiegoAndradesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		527C8A3C2C1A371100B5F59B /* PracticaVisionProDiegoAndrades */ = {
+			isa = PBXGroup;
+			children = (
+				527C8A412C1A371100B5F59B /* PracticaVisionProDiegoAndradesApp.swift */,
+				527C8A432C1A371100B5F59B /* ContentView.swift */,
+				527C8A452C1A371100B5F59B /* ImmersiveView.swift */,
+				527C8A472C1A371400B5F59B /* Assets.xcassets */,
+				527C8A4C2C1A371400B5F59B /* Info.plist */,
+				527C8A492C1A371400B5F59B /* Preview Content */,
+			);
+			path = PracticaVisionProDiegoAndrades;
+			sourceTree = "<group>";
+		};
+		527C8A3D2C1A371100B5F59B /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				527C8A3E2C1A371100B5F59B /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		527C8A492C1A371400B5F59B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				527C8A4A2C1A371400B5F59B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		527C8A542C1A371400B5F59B /* PracticaVisionProDiegoAndradesTests */ = {
+			isa = PBXGroup;
+			children = (
+				527C8A552C1A371400B5F59B /* PracticaVisionProDiegoAndradesTests.swift */,
+			);
+			path = PracticaVisionProDiegoAndradesTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		527C8A392C1A371100B5F59B /* PracticaVisionProDiegoAndrades */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 527C8A592C1A371400B5F59B /* Build configuration list for PBXNativeTarget "PracticaVisionProDiegoAndrades" */;
+			buildPhases = (
+				527C8A362C1A371100B5F59B /* Sources */,
+				527C8A372C1A371100B5F59B /* Frameworks */,
+				527C8A382C1A371100B5F59B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PracticaVisionProDiegoAndrades;
+			packageProductDependencies = (
+				527C8A3F2C1A371100B5F59B /* RealityKitContent */,
+			);
+			productName = PracticaVisionProDiegoAndrades;
+			productReference = 527C8A3A2C1A371100B5F59B /* PracticaVisionProDiegoAndrades.app */;
+			productType = "com.apple.product-type.application";
+		};
+		527C8A502C1A371400B5F59B /* PracticaVisionProDiegoAndradesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 527C8A5C2C1A371400B5F59B /* Build configuration list for PBXNativeTarget "PracticaVisionProDiegoAndradesTests" */;
+			buildPhases = (
+				527C8A4D2C1A371400B5F59B /* Sources */,
+				527C8A4E2C1A371400B5F59B /* Frameworks */,
+				527C8A4F2C1A371400B5F59B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				527C8A532C1A371400B5F59B /* PBXTargetDependency */,
+			);
+			name = PracticaVisionProDiegoAndradesTests;
+			productName = PracticaVisionProDiegoAndradesTests;
+			productReference = 527C8A512C1A371400B5F59B /* PracticaVisionProDiegoAndradesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		527C8A322C1A371100B5F59B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					527C8A392C1A371100B5F59B = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					527C8A502C1A371400B5F59B = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 527C8A392C1A371100B5F59B;
+					};
+				};
+			};
+			buildConfigurationList = 527C8A352C1A371100B5F59B /* Build configuration list for PBXProject "PracticaVisionProDiegoAndrades" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 527C8A312C1A371100B5F59B;
+			productRefGroup = 527C8A3B2C1A371100B5F59B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				527C8A392C1A371100B5F59B /* PracticaVisionProDiegoAndrades */,
+				527C8A502C1A371400B5F59B /* PracticaVisionProDiegoAndradesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		527C8A382C1A371100B5F59B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				527C8A4B2C1A371400B5F59B /* Preview Assets.xcassets in Resources */,
+				527C8A482C1A371400B5F59B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		527C8A4F2C1A371400B5F59B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		527C8A362C1A371100B5F59B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				527C8A442C1A371100B5F59B /* ContentView.swift in Sources */,
+				527C8A422C1A371100B5F59B /* PracticaVisionProDiegoAndradesApp.swift in Sources */,
+				527C8A462C1A371100B5F59B /* ImmersiveView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		527C8A4D2C1A371400B5F59B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				527C8A562C1A371400B5F59B /* PracticaVisionProDiegoAndradesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		527C8A532C1A371400B5F59B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 527C8A392C1A371100B5F59B /* PracticaVisionProDiegoAndrades */;
+			targetProxy = 527C8A522C1A371400B5F59B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		527C8A572C1A371400B5F59B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 1.1;
+			};
+			name = Debug;
+		};
+		527C8A582C1A371400B5F59B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 1.1;
+			};
+			name = Release;
+		};
+		527C8A5A2C1A371400B5F59B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PracticaVisionProDiegoAndrades/Preview Content\"";
+				DEVELOPMENT_TEAM = 8Z9R3793D9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = d.a.o.PracticaVisionProDiegoAndrades;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		527C8A5B2C1A371400B5F59B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PracticaVisionProDiegoAndrades/Preview Content\"";
+				DEVELOPMENT_TEAM = 8Z9R3793D9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = d.a.o.PracticaVisionProDiegoAndrades;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+		527C8A5D2C1A371400B5F59B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Z9R3793D9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = d.a.o.PracticaVisionProDiegoAndradesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PracticaVisionProDiegoAndrades.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PracticaVisionProDiegoAndrades";
+				XROS_DEPLOYMENT_TARGET = 1.1;
+			};
+			name = Debug;
+		};
+		527C8A5E2C1A371400B5F59B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Z9R3793D9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = d.a.o.PracticaVisionProDiegoAndradesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PracticaVisionProDiegoAndrades.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PracticaVisionProDiegoAndrades";
+				XROS_DEPLOYMENT_TARGET = 1.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		527C8A352C1A371100B5F59B /* Build configuration list for PBXProject "PracticaVisionProDiegoAndrades" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				527C8A572C1A371400B5F59B /* Debug */,
+				527C8A582C1A371400B5F59B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		527C8A592C1A371400B5F59B /* Build configuration list for PBXNativeTarget "PracticaVisionProDiegoAndrades" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				527C8A5A2C1A371400B5F59B /* Debug */,
+				527C8A5B2C1A371400B5F59B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		527C8A5C2C1A371400B5F59B /* Build configuration list for PBXNativeTarget "PracticaVisionProDiegoAndradesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				527C8A5D2C1A371400B5F59B /* Debug */,
+				527C8A5E2C1A371400B5F59B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		527C8A3F2C1A371100B5F59B /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 527C8A322C1A371100B5F59B /* Project object */;
+}
