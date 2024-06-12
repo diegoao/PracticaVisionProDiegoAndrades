@@ -18,91 +18,7 @@ struct HeroDetailView: View {
     var body: some View {
         if let hero = heroe{
             
-            #if os(watchOS)
-            ZStack{
            
-                    VStack() {
-                        ZStack{
-                            Rectangle()
-                                .fill(MarvelAppColor().SecundaryColor.opacity(0.8))
-                                .frame(width:200, height: 35)
-                                .cornerRadius(10)
-                            
-                            HStack{
-                                
-                                Button(action: {
-                                    appState.goheros()
-                                }, label: {
-                                    Image(systemName: "chevron.backward.square.fill")
-                                        .font(MarvelApFonts().textXSs)
-                                        .foregroundStyle(.blue)
-                                    Text("back")
-                                        .foregroundStyle(.blue)
-                                    
-                                })
-                            }
-                        }
-                        .padding(.top, -20)
-               
-                    ScrollView {
-                        
-                        
-                        VStack{
-                            DetailRowView(hero: hero)
-                        }
-                        
-                
-                        
-                        ZStack(alignment: .center){
-                            
-                            Rectangle()
-                                .fill(MarvelAppColor().primaryColor.opacity(0.8))
-                                .frame(width:130, height: 25)
-                                .cornerRadius(10)
-                             
-                            
-                            Text("Description").font(MarvelApFonts().textXS)
-                                .foregroundStyle(MarvelAppColor().TextColor4)
-                             
-                            
-                        }
-                        
-                        .onAppear {
-                            if hero.description.isEmpty{
-                                text = NSLocalizedString("notdescription", comment: "")
-                            }else {
-                                text = hero.description // Asignamos hero.description a text cuando la vista aparece
-                            }
-                        }
-                        
-                        VStack{
-                            Text("\(text)")
-                                .padding()
-                                .foregroundColor(.white)
-                                .frame(maxWidth: 170, maxHeight: 700) 
-                                .scrollContentBackground(.hidden)
-                               
-                        }
-                    }
-                       
-                }
-                .background(
-                    Image("fondo2")
-                        .resizable()
-                        .scaledToFill()
-                        .edgesIgnoringSafeArea(.all)
-                        .opacity(0.8)
-                        .id(10))
-                .background(Color.gray.opacity(0.5))
-                
-                
-            }
-            
- 
-            
-            
-
-            #else
             VStack(alignment: .center) {
                 ZStack{
                     Rectangle()
@@ -200,7 +116,6 @@ struct HeroDetailView: View {
                     .id(10))
             .background(Color.gray.opacity(0.5))
             
-            #endif
         }
     }
 }

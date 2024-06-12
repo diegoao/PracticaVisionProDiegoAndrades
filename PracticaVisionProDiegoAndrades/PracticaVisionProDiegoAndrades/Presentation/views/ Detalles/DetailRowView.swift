@@ -13,45 +13,7 @@ struct DetailRowView: View {
     var hero: Result
     
     var body: some View {
-        
-        #if os(watchOS)
-        ZStack(){
-            VStack{
-                ZStack{
-                    Rectangle()
-                        .fill(MarvelAppColor().primaryColor.opacity(0.8))
-                        .frame(width:180, height: 38)
-                        .cornerRadius(10)
-                        .id(0)
-                    Text("\(hero.name)")
-                        .font(MarvelApFonts().textXS)
-                        .foregroundStyle(MarvelAppColor().TextColor4)
-                        .id(1)
-                    }
-                AsyncImage(url: URL(string: "\(hero.thumbnail.path).\(hero.thumbnail.thumbnailExtension.rawValue)" )) { photo in
-                    photo
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 120, height:  120)
-                        .cornerRadius(10)
-                        .padding([.leading, . trailing], 32)
-                        .opacity(0.8)
-                        .id(2)
-                    
-                } placeholder: {
-                    Image(systemName: "photo")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 120, height:  120)
-                        .cornerRadius(10)
-                        .padding([.leading, . trailing], 32)
-                        .opacity(1)
-                        .id(3)
-                }
-
-            }
-        }
-        #else
+    
         ZStack(){
             VStack{
                 ZStack{
@@ -87,9 +49,6 @@ struct DetailRowView: View {
 
             }
         }
-        
-        #endif
-       
     }
        
 }
