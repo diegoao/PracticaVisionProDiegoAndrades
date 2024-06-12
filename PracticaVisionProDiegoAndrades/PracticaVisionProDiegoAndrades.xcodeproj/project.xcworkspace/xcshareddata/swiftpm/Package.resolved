@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "marvellibrary",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/diegoao/MarvelLibrary",
+      "state" : {
+        "branch" : "main",
+        "revision" : "feb711f0f707bee221b29be9804b1e48fc1a8fbe"
+      }
+    }
+  ],
+  "version" : 2
+}
