@@ -36,17 +36,17 @@ import Foundation
 import Foundation
 
 // MARK: - HerosModel
-struct HerosModel: Codable {
+struct HerosModel: Codable, Hashable {
     let data: DataClass
 }
 
 // MARK: - DataClass
-struct DataClass: Codable {
+struct DataClass: Codable, Hashable {
     let results: [Result]
 }
 
 // MARK: - Result
-struct Result: Codable, Identifiable {
+struct Result: Codable, Identifiable, Hashable {
     let id: Int
     let name, description: String
     let thumbnail: Thumbnail
@@ -54,7 +54,7 @@ struct Result: Codable, Identifiable {
 }
 
 // MARK: - Thumbnail
-struct Thumbnail: Codable {
+struct Thumbnail: Codable, Hashable {
     let path: String
     let thumbnailExtension: Extension
 
@@ -64,7 +64,7 @@ struct Thumbnail: Codable {
     }
 }
 
-enum Extension: String, Codable {
+enum Extension: String, Codable, Hashable {
     case gif = "gif"
     case jpg = "jpg"
 }

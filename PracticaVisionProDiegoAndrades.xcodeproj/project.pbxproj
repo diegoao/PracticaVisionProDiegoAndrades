@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		527C8A402C1A371100B5F59B /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 527C8A3F2C1A371100B5F59B /* RealityKitContent */; };
 		527C8A422C1A371100B5F59B /* PracticaVisionProDiegoAndradesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C8A412C1A371100B5F59B /* PracticaVisionProDiegoAndradesApp.swift */; };
-		527C8A442C1A371100B5F59B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C8A432C1A371100B5F59B /* ContentView.swift */; };
-		527C8A462C1A371100B5F59B /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C8A452C1A371100B5F59B /* ImmersiveView.swift */; };
 		527C8A482C1A371400B5F59B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527C8A472C1A371400B5F59B /* Assets.xcassets */; };
 		527C8A4B2C1A371400B5F59B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527C8A4A2C1A371400B5F59B /* Preview Assets.xcassets */; };
 		527C8A562C1A371400B5F59B /* PracticaVisionProDiegoAndradesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C8A552C1A371400B5F59B /* PracticaVisionProDiegoAndradesTests.swift */; };
@@ -39,6 +37,8 @@
 		527C8A9C2C1A399400B5F59B /* HerosRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C8A912C1A399400B5F59B /* HerosRowView.swift */; };
 		527C8A9E2C1A39EA00B5F59B /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C8A9D2C1A39EA00B5F59B /* ViewRouter.swift */; };
 		527C8AA62C1A3E0C00B5F59B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 527C8AA42C1A3E0C00B5F59B /* Localizable.strings */; };
+		529BD0472C1B6BDD00858299 /* HeroesViewV01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529BD0462C1B6BDD00858299 /* HeroesViewV01.swift */; };
+		529BD0492C1B70EB00858299 /* HeroesViewv02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529BD0482C1B70EB00858299 /* HeroesViewv02.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +55,6 @@
 		527C8A3A2C1A371100B5F59B /* PracticaVisionProDiegoAndrades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticaVisionProDiegoAndrades.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		527C8A3E2C1A371100B5F59B /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		527C8A412C1A371100B5F59B /* PracticaVisionProDiegoAndradesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticaVisionProDiegoAndradesApp.swift; sourceTree = "<group>"; };
-		527C8A432C1A371100B5F59B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		527C8A452C1A371100B5F59B /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
 		527C8A472C1A371400B5F59B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		527C8A4A2C1A371400B5F59B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		527C8A4C2C1A371400B5F59B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,6 +85,8 @@
 		527C8A9D2C1A39EA00B5F59B /* ViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		527C8AA52C1A3E0C00B5F59B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		527C8AA72C1A3E3500B5F59B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		529BD0462C1B6BDD00858299 /* HeroesViewV01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesViewV01.swift; sourceTree = "<group>"; };
+		529BD0482C1B70EB00858299 /* HeroesViewv02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesViewv02.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,9 +135,7 @@
 				527C8A6E2C1A397200B5F59B /* Domain */,
 				527C8A802C1A397D00B5F59B /* Data */,
 				527C8A412C1A371100B5F59B /* PracticaVisionProDiegoAndradesApp.swift */,
-				527C8A432C1A371100B5F59B /* ContentView.swift */,
 				527C8A9D2C1A39EA00B5F59B /* ViewRouter.swift */,
-				527C8A452C1A371100B5F59B /* ImmersiveView.swift */,
 				527C8A472C1A371400B5F59B /* Assets.xcassets */,
 				527C8A4C2C1A371400B5F59B /* Info.plist */,
 				527C8A492C1A371400B5F59B /* Preview Content */,
@@ -277,8 +275,10 @@
 		527C8A922C1A399400B5F59B /* Heroes */ = {
 			isa = PBXGroup;
 			children = (
+				529BD0462C1B6BDD00858299 /* HeroesViewV01.swift */,
 				527C8A902C1A399400B5F59B /* HeroesView.swift */,
 				527C8A912C1A399400B5F59B /* HerosRowView.swift */,
+				529BD0482C1B70EB00858299 /* HeroesViewv02.swift */,
 			);
 			path = Heroes;
 			sourceTree = "<group>";
@@ -416,7 +416,6 @@
 				527C8A9E2C1A39EA00B5F59B /* ViewRouter.swift in Sources */,
 				527C8A952C1A399400B5F59B /* AppState.swift in Sources */,
 				527C8A962C1A399400B5F59B /* HerosViewModel.swift in Sources */,
-				527C8A442C1A371100B5F59B /* ContentView.swift in Sources */,
 				527C8A712C1A397200B5F59B /* HerosRepositoryProtocol.swift in Sources */,
 				527C8A972C1A399400B5F59B /* SeriesViewModel.swift in Sources */,
 				527C8A722C1A397200B5F59B /* SeriesRepositoryProtocol.swift in Sources */,
@@ -428,9 +427,10 @@
 				527C8A422C1A371100B5F59B /* PracticaVisionProDiegoAndradesApp.swift in Sources */,
 				527C8A742C1A397200B5F59B /* HeroUseCase.swift in Sources */,
 				527C8A852C1A397D00B5F59B /* NetworkSeries.swift in Sources */,
+				529BD0472C1B6BDD00858299 /* HeroesViewV01.swift in Sources */,
 				527C8A822C1A397D00B5F59B /* HTTPMethods.swift in Sources */,
+				529BD0492C1B70EB00858299 /* HeroesViewv02.swift in Sources */,
 				527C8A842C1A397D00B5F59B /* NetworkHeros.swift in Sources */,
-				527C8A462C1A371100B5F59B /* ImmersiveView.swift in Sources */,
 				527C8A702C1A397200B5F59B /* SeriesModel.swift in Sources */,
 				527C8A812C1A397D00B5F59B /* Endpoints.swift in Sources */,
 				527C8A982C1A399400B5F59B /* DetailRowView.swift in Sources */,

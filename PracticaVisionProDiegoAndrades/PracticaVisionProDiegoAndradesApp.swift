@@ -35,5 +35,7 @@ struct IOS_SwiftUI_DiegoAndradesApp: App {
             ViewRouter()
                 .environmentObject(appState)
         }
+        .windowStyle(.plain) //Indicamos que es una ventana normal
+        
     }
 }
