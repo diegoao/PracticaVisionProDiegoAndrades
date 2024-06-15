@@ -14,7 +14,7 @@ struct ViewRouter: View {
         switch(appState.status){
         case .heroes:
             withAnimation {
-                HeroesViewV02(viewModel: HerosViewModel())
+                HeroesView(viewModel: HerosViewModel())
             }
             
         case .detalles(let id, let heroe):
