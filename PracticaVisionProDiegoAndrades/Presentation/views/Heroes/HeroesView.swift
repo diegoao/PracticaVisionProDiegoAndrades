@@ -14,7 +14,7 @@ struct HeroesView: View {
     
     @EnvironmentObject var appState: AppState
     @StateObject var viewModel: HerosViewModel
-
+    
     
     
     @State private var selectedHero: Result?
@@ -32,13 +32,12 @@ struct HeroesView: View {
                                     .listRowBackground(Color.white.opacity(0))
                             }
                             .tag(hero)
+                            .id(1)
                         }
                     }
                 }
                 .navigationTitle("Lista de Héroes")
-                
-                
-                
+                .id(2)
             } content: {
                 VStack{
                     if let hero = selectedHero {
@@ -50,6 +49,7 @@ struct HeroesView: View {
                                         .resizable()
                                         .frame(minHeight: 300, maxHeight: 400)
                                         .cornerRadius(20)
+                                        .id(4)
                                     
                                 } placeholder: {
                                     ProgressView()
@@ -59,14 +59,15 @@ struct HeroesView: View {
                                 VStack{
                                     //description del hero empty
                                     Text("Este héroe no tiene descripción.")
+                                        .id(5)
                                 }
                             }else{
                                 VStack{
                                     //description del hero
                                     Text(hero.description)
+                                        .id(6)
                                 }
                             }
-                            
                             Spacer()
                         }
                         .navigationTitle(hero.name.uppercased())
@@ -74,9 +75,9 @@ struct HeroesView: View {
                     } else {
                         //Vista sin contenido
                         ContentUnavailableView("Selecciona un heroe", systemImage: "person.fill", description: Text("Seleccione un héroe haciendo Tap para cargar sus detalles"))
+                            .id(7)
                     }
                 }
-                
             } detail: {
                 // Series del Héroe
                 NavigationStack {
@@ -90,7 +91,6 @@ struct HeroesView: View {
                                                 .frame(maxWidth: .infinity, alignment: .center) // Centra el contenido
                                         }
                                         .id(8)
-                                        
                                     }
                                 }else{
                                     ContentUnavailableView("No hay series para este personaje", systemImage: "xmark.icloud.fill")
@@ -110,6 +110,7 @@ struct HeroesView: View {
                         
                     } else {
                         ContentUnavailableView("Sin Datos", systemImage: "xmark.icloud.fill")
+                            .id(10)
                     }
                 }
                 .navigationTitle("Listado de Series")
@@ -138,7 +139,7 @@ struct HeroesView: View {
                     
                     //Añado la escena a Content
                     content.add(scene)
-
+                    
                 }
             }
         }
@@ -150,7 +151,7 @@ struct HeroesView: View {
 #Preview {
     HeroesView(viewModel: HerosViewModel(network: HeroUseCaseFake()))
         .environmentObject(AppState())
-  
+    
 }
 
 

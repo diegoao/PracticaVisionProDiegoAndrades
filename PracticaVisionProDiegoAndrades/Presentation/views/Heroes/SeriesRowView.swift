@@ -18,7 +18,7 @@ struct SeriesRowView: View {
                 Text(serie.title)
                     .font(MarvelApFonts().textM)
                     .foregroundStyle(MarvelAppColor().TextColor1)
-                    .id(3)
+                    .id(0)
 
             }
             VStack{
@@ -44,7 +44,7 @@ struct SeriesRowView: View {
                 Text("\(serie.startYear)-\(serie.endYear)")
                     .font(MarvelApFonts().textM)
                     .foregroundStyle(MarvelAppColor().TextColor1)
-                    .id(0)
+                    .id(3)
               
             }
         }
