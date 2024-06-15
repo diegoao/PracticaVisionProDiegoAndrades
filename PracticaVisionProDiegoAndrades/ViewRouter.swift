@@ -16,13 +16,7 @@ struct ViewRouter: View {
             withAnimation {
                 HeroesView(viewModel: HerosViewModel())
             }
-            
-        case .detalles(let id, let heroe):
-            withAnimation {
-                HeroDetailView(viewModel: SeriesViewModel(id: id), heroe: heroe)
-            }
         }
-     
     }
 }
 

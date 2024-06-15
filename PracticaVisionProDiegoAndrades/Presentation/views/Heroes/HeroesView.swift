@@ -12,6 +12,8 @@ struct HeroesView: View {
     
     @EnvironmentObject var appState: AppState
     @StateObject var viewModel: HerosViewModel
+
+    
     
     @State private var selectedHero: Result?
     
@@ -66,49 +68,50 @@ struct HeroesView: View {
                     .font(.title)
                 } else {
                     //Vista sin contenido
-                    ContentUnavailableView("Selecciona un heroe", systemImage: "person.fill")
+                    ContentUnavailableView("Selecciona un heroe", systemImage: "person.fill", description: Text("Seleccione un héroe haciendo Tap para cargar sus detalles"))
                 }
             }
             
         } detail: {
-            //Series del Héroe
-            NavigationStack{
-                if let hero = selectedHero{
-                    List{
-                        ForEach(hero.transformations){ trans in
-                            VStack{
-                                AsyncImage(url: URL(string: trans.photo)) { foto in
-                                    foto
-                                        .resizable()
-                                        .frame(minHeight: 200, maxHeight: 400)
-                                        .cornerRadius(20)
-                                } placeholder: {
-                                    ProgressView()
+            // Series del Héroe
+            NavigationStack {
+                if let hero = selectedHero {
+                    VStack {
+                        if let dato = viewModel.serie {
+                            List(){
+                                ForEach(dato) { series in
+                                    NetflixScrollView(serie: series)
                                 }
-                                
-                                //nombre
-                                Text(trans.name)
-                                    .font(.title2)
-                                //detalle
-                                Text(trans.description)
-                                    .font(.caption2)
-                                
+                                .id(8)
+                                .frame(height: 170)
                             }
-                            
+                        } else {
+                            Text("notseries")
+                                .id(9)
                         }
                     }
+                    .onChange(of: hero, { oldValue, newValue in
+                        viewModel.getSeries(id: newValue.id)
+                    })
+                    .onAppear{
+                        viewModel.getSeries(id: hero.id)
+                    }
+              
                 } else {
                     ContentUnavailableView("Sin Datos", systemImage: "xmark.icloud.fill")
                 }
             }
             .navigationTitle("Listado de Series")
-            
         }
         
     }
 }
+
+
 #Preview {
     HeroesView(viewModel: HerosViewModel(network: HeroUseCaseFake()))
         .environmentObject(AppState())
   
 }
+
+
