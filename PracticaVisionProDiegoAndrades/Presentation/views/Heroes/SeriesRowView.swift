@@ -13,36 +13,39 @@ struct SeriesRowView: View {
     var body: some View {
         VStack(spacing:-10){
             VStack{
-                //año inicio y fin
-                Text("\(serie.startYear)-\(serie.endYear)")
-                    .font(MarvelApFonts().textXS)
+              
+                //Titulo
+                Text(serie.title)
+                    .font(MarvelApFonts().textM)
                     .foregroundStyle(MarvelAppColor().TextColor1)
-                    .id(0)
+                    .id(3)
+
             }
             VStack{
                 //Foto
                 AsyncImage(url: URL(string: "\(serie.thumbnail.path).\(serie.thumbnail.thumbnailExtension.rawValue)" )) { photo in
                     photo
                         .resizable()
-                        .frame(width: 100, height: 100)
                         .cornerRadius(40)
+                        .frame(width: 300, height: 300)
                         .padding()
                         .id(1)
                 } placeholder: {
                     Image(systemName: "photo")
                         .resizable()
-                        .frame(width: 100, height: 100)
+                        .frame(width: 300, height: 300)
                         .cornerRadius(40)
                         .padding()
                         .id(2)
                 }
             }
             VStack{
-                //Titulo
-                Text(serie.title)
-                    .font(MarvelApFonts().textXS)
+                //año inicio y fin
+                Text("\(serie.startYear)-\(serie.endYear)")
+                    .font(MarvelApFonts().textM)
                     .foregroundStyle(MarvelAppColor().TextColor1)
-                    .id(3)
+                    .id(0)
+              
             }
         }
     }

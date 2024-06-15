@@ -43,7 +43,7 @@ struct HeroesView: View {
                             AsyncImage(url: URL(string: ("\(hero.thumbnail.path).\(hero.thumbnail.thumbnailExtension.rawValue)"))){ foto in
                                 foto
                                     .resizable()
-                                    .frame(minHeight: 200, maxHeight: 400)
+                                    .frame(minHeight: 300, maxHeight: 400)
                                     .cornerRadius(20)
                                 
                             } placeholder: {
@@ -78,13 +78,19 @@ struct HeroesView: View {
                 if let hero = selectedHero {
                     VStack {
                         if let dato = viewModel.serie {
-                            List(){
-                                ForEach(dato) { series in
-                                    SeriesRowView(serie: series)
+                            if !dato.isEmpty {
+                                List(){
+                                    ForEach(dato) { series in
+                                        SeriesRowView(serie: series)
+                                            .frame(maxWidth: .infinity, alignment: .center) // Centra el contenido
+                                    }
+                                    .id(8)
+                                    
                                 }
-                                .id(8)
-                                .frame(height: 170)
+                            }else{
+                                ContentUnavailableView("No hay series para este personaje", systemImage: "xmark.icloud.fill")
                             }
+                           
                         } else {
                             Text("notseries")
                                 .id(9)
