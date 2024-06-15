@@ -82,10 +82,7 @@ final class IOS_SwiftUI_DiegoAndradesTests: XCTestCase{
     //MARK: - Testing de series
     
     //Compruebo que haya Series en el HeroUseCaseFake
-    func testSerieViewModel() async throws {
-        let vm = SeriesViewModel(network: SeriesUseCaseFake(), id: 1)
-        XCTAssertNotNil(vm)
-    }
+
     
     func testSerieUseCase() async throws {
         //Compruebo que no me devuelva nil
@@ -121,15 +118,7 @@ final class IOS_SwiftUI_DiegoAndradesTests: XCTestCase{
     }
     
     //   test presentation
-    func testSeries_Presentation() async throws {
- 
-        let viewModel = SeriesViewModel(network: SeriesUseCaseFake(), id: 1)
-        XCTAssertNotNil(viewModel)
-        
-        
-        let view = HeroDetailView(viewModel: SeriesViewModel(network:  SeriesUseCaseFake(), id: 2))
-        XCTAssertNotNil(view)
-    }
+
     
     //test capa heroes depository
     func testSeries_Data() async throws {

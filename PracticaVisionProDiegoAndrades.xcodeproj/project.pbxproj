@@ -29,10 +29,7 @@
 		527C8A872C1A397D00B5F59B /* SeriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C8A7E2C1A397D00B5F59B /* SeriesRepository.swift */; };
 		527C8A952C1A399400B5F59B /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C8A882C1A399400B5F59B /* AppState.swift */; };
 		527C8A962C1A399400B5F59B /* HerosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C8A892C1A399400B5F59B /* HerosViewModel.swift */; };
-		527C8A972C1A399400B5F59B /* SeriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C8A8A2C1A399400B5F59B /* SeriesViewModel.swift */; };
-		527C8A982C1A399400B5F59B /* DetailRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C8A8C2C1A399400B5F59B /* DetailRowView.swift */; };
-		527C8A992C1A399400B5F59B /* HeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C8A8D2C1A399400B5F59B /* HeroDetailView.swift */; };
-		527C8A9A2C1A399400B5F59B /* NetflixScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C8A8E2C1A399400B5F59B /* NetflixScrollView.swift */; };
+		527C8A9A2C1A399400B5F59B /* SeriesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C8A8E2C1A399400B5F59B /* SeriesRowView.swift */; };
 		527C8A9C2C1A399400B5F59B /* HerosRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C8A912C1A399400B5F59B /* HerosRowView.swift */; };
 		527C8A9E2C1A39EA00B5F59B /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C8A9D2C1A39EA00B5F59B /* ViewRouter.swift */; };
 		527C8AA62C1A3E0C00B5F59B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 527C8AA42C1A3E0C00B5F59B /* Localizable.strings */; };
@@ -74,10 +71,7 @@
 		527C8A7E2C1A397D00B5F59B /* SeriesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesRepository.swift; sourceTree = "<group>"; };
 		527C8A882C1A399400B5F59B /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		527C8A892C1A399400B5F59B /* HerosViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerosViewModel.swift; sourceTree = "<group>"; };
-		527C8A8A2C1A399400B5F59B /* SeriesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesViewModel.swift; sourceTree = "<group>"; };
-		527C8A8C2C1A399400B5F59B /* DetailRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRowView.swift; sourceTree = "<group>"; };
-		527C8A8D2C1A399400B5F59B /* HeroDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroDetailView.swift; sourceTree = "<group>"; };
-		527C8A8E2C1A399400B5F59B /* NetflixScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetflixScrollView.swift; sourceTree = "<group>"; };
+		527C8A8E2C1A399400B5F59B /* SeriesRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesRowView.swift; sourceTree = "<group>"; };
 		527C8A912C1A399400B5F59B /* HerosRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerosRowView.swift; sourceTree = "<group>"; };
 		527C8A9D2C1A39EA00B5F59B /* ViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		527C8AA52C1A3E0C00B5F59B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -253,24 +247,14 @@
 			children = (
 				527C8A882C1A399400B5F59B /* AppState.swift */,
 				527C8A892C1A399400B5F59B /* HerosViewModel.swift */,
-				527C8A8A2C1A399400B5F59B /* SeriesViewModel.swift */,
 			);
 			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		527C8A8F2C1A399400B5F59B /*  Detalles */ = {
-			isa = PBXGroup;
-			children = (
-				527C8A8C2C1A399400B5F59B /* DetailRowView.swift */,
-				527C8A8D2C1A399400B5F59B /* HeroDetailView.swift */,
-				527C8A8E2C1A399400B5F59B /* NetflixScrollView.swift */,
-			);
-			path = " Detalles";
 			sourceTree = "<group>";
 		};
 		527C8A922C1A399400B5F59B /* Heroes */ = {
 			isa = PBXGroup;
 			children = (
+				527C8A8E2C1A399400B5F59B /* SeriesRowView.swift */,
 				527C8A912C1A399400B5F59B /* HerosRowView.swift */,
 				529BD0482C1B70EB00858299 /* HeroesView.swift */,
 			);
@@ -280,7 +264,6 @@
 		527C8A932C1A399400B5F59B /* views */ = {
 			isa = PBXGroup;
 			children = (
-				527C8A8F2C1A399400B5F59B /*  Detalles */,
 				527C8A922C1A399400B5F59B /* Heroes */,
 			);
 			path = views;
@@ -411,7 +394,6 @@
 				527C8A952C1A399400B5F59B /* AppState.swift in Sources */,
 				527C8A962C1A399400B5F59B /* HerosViewModel.swift in Sources */,
 				527C8A712C1A397200B5F59B /* HerosRepositoryProtocol.swift in Sources */,
-				527C8A972C1A399400B5F59B /* SeriesViewModel.swift in Sources */,
 				527C8A722C1A397200B5F59B /* SeriesRepositoryProtocol.swift in Sources */,
 				527C8A872C1A397D00B5F59B /* SeriesRepository.swift in Sources */,
 				527C8A732C1A397200B5F59B /* ConstantsApp.swift in Sources */,
@@ -425,9 +407,7 @@
 				527C8A842C1A397D00B5F59B /* NetworkHeros.swift in Sources */,
 				527C8A702C1A397200B5F59B /* SeriesModel.swift in Sources */,
 				527C8A812C1A397D00B5F59B /* Endpoints.swift in Sources */,
-				527C8A982C1A399400B5F59B /* DetailRowView.swift in Sources */,
-				527C8A9A2C1A399400B5F59B /* NetflixScrollView.swift in Sources */,
-				527C8A992C1A399400B5F59B /* HeroDetailView.swift in Sources */,
+				527C8A9A2C1A399400B5F59B /* SeriesRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

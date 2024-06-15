@@ -1,8 +1,8 @@
 //
 //  NetworkSeries.swift
-//  IOS-SwiftUI.DiegoAndrades
+//  PracticaVisionProDiegoAndrades
 //
-//  Created by Macbook Pro on 2/5/24.
+//  Created by Macbook Pro on 15/6/24.
 //
 
 import Foundation

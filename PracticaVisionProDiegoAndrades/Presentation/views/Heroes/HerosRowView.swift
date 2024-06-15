@@ -1,8 +1,8 @@
 //
 //  HerosRowView.swift
-//  IOS-SwiftUI.DiegoAndrades
+//  PracticaVisionProDiegoAndrades
 //
-//  Created by Macbook Pro on 1/5/24.
+//  Created by Macbook Pro on 15/6/24.
 //
 
 import SwiftUI

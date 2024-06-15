@@ -1,8 +1,8 @@
 //
-//  HeroesViewv02.swift
+//  HeroesViewv.swift
 //  PracticaVisionProDiegoAndrades
 //
-//  Created by Macbook Pro on 13/6/24.
+//  Created by Macbook Pro on 15/6/24.
 //
 
 import SwiftUI
@@ -80,7 +80,7 @@ struct HeroesView: View {
                         if let dato = viewModel.serie {
                             List(){
                                 ForEach(dato) { series in
-                                    NetflixScrollView(serie: series)
+                                    SeriesRowView(serie: series)
                                 }
                                 .id(8)
                                 .frame(height: 170)

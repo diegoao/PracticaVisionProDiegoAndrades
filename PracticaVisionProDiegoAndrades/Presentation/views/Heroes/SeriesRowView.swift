@@ -1,14 +1,14 @@
 //
-//  NetflixScrollView.swift
-//  IOS-SwiftUI.DiegoAndrades
+//  SeriesRowView.swift
+//  PracticaVisionProDiegoAndrades
 //
-//  Created by Macbook Pro on 3/5/24.
+//  Created by Macbook Pro on 15/6/24.
 //
 
 import SwiftUI
 import MarvelLibrary
 
-struct NetflixScrollView: View {
+struct SeriesRowView: View {
     var serie: Resultado
     var body: some View {
         VStack(spacing:-10){
@@ -49,7 +49,7 @@ struct NetflixScrollView: View {
 }
 
 #Preview {
-    NetflixScrollView(serie: Resultado(
+    SeriesRowView(serie: Resultado(
         id: 23058,
         title: "All-New Guardians of the Galaxy (2017)",
         description: "",

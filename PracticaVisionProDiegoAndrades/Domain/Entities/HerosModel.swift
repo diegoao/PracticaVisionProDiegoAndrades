@@ -1,36 +1,11 @@
 //
 //  HerosModel.swift
-//  IOS-SwiftUI.DiegoAndrades
+//  PracticaVisionProDiegoAndrades
 //
-//  Created by Macbook Pro on 29/4/24.
+//  Created by Macbook Pro on 15/6/24.
 //
 
 import Foundation
-
-//// MARK: - 
-//struct HerosModel: Identifiable,  Decodable {
-//    let id: Int?
-//    let name, description: String?
-//    let thumbnail: Thumbnail?
-//
-//}
-//
-//// MARK: - Thumbnail
-//struct Thumbnail: Decodable {
-//    let path: String
-//    let thumbnailExtension: Extension
-//
-//    enum CodingKeys: String, CodingKey {
-//        case path
-//        case thumbnailExtension = "extension"
-//    }
-//}
-//
-//enum Extension: String, Codable {
-//    case gif = "gif"
-//    case jpg = "jpg"
-//}
-
 
 // MARK: - HeroModel
 import Foundation
