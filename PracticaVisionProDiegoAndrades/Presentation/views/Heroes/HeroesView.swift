@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import RealityKit
+import RealityKitContent
 import MarvelLibrary
 
 struct HeroesView: View {
@@ -108,6 +110,35 @@ struct HeroesView: View {
                 }
             }
             .navigationTitle("Listado de Series")
+        }
+        
+        // ------------------------------
+        // Reality Kit para cargar sonido
+        // ------------------------------
+        RealityView{ content in
+            if let scene = try? await Entity(named: "Hero", in:  realityKitContentBundle){
+                
+                //Busco el Emisor de sonido
+                guard let SoundEmitter =  scene.findEntity(named: "SoundEmitter") else {
+                    NSLog("Emitter no encontrado en la vista HeroesView")
+                    return
+                }
+                
+                //Busco el audio
+                guard let recourceSound = try? await AudioFileResource(named: "/Root/introMarvel_wav", from: "Hero.usda", in: realityKitContentBundle) else {
+                    NSLog("No se encuentra Sonido")
+                    return
+                }
+                
+                //Asocio al emisor de Sonido el audio
+                let audio = SoundEmitter.prepareAudio(recourceSound)
+                audio.play()
+                
+                //Añado la escena a Content
+                content.add(scene)
+                
+                
+            }
         }
         
     }
