@@ -20,51 +20,5 @@
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C28EEF6B-521F-4775-B8AA-8F07C24AD182"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PracticaVisionProDiegoAndrades/Presentation/views/Heroes/HeroesView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "C28EEF6B-521F-4775-B8AA-8F07C24AD182 - ad781ee35c73b8f9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for closure #4 @Swift.MainActor @Sendable (inout _RealityKit_SwiftUI.RealityViewContent) async -&gt; () in PracticaVisionProDiegoAndrades.HeroesView.body.getter : some"
-                  moduleName = "PracticaVisionProDiegoAndrades"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookpro/Desktop/Desarrollo%20APP%20Mo%CC%81viles/Reality%20Kit%20VisionOS/Pra%CC%81ctica/PracticaVisionProDiegoAndrades/PracticaVisionProDiegoAndrades/Presentation/views/Heroes/HeroesView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "123"
-                  endingLineNumber = "123">
-               </Location>
-               <Location
-                  uuid = "C28EEF6B-521F-4775-B8AA-8F07C24AD182 - 4341ae271fc795fa"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(6) suspend resume partial function for closure #4 @Swift.MainActor @Sendable (inout _RealityKit_SwiftUI.RealityViewContent) async -&gt; () in PracticaVisionProDiegoAndrades.HeroesView.body.getter : some"
-                  moduleName = "PracticaVisionProDiegoAndrades"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookpro/Desktop/Desarrollo%20APP%20Mo%CC%81viles/Reality%20Kit%20VisionOS/Pra%CC%81ctica/PracticaVisionProDiegoAndrades/PracticaVisionProDiegoAndrades/Presentation/views/Heroes/HeroesView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "123"
-                  endingLineNumber = "123">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
