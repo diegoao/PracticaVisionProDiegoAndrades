@@ -27,8 +27,8 @@ https://developer.marvel.com
 ## Información
 
 La práctica consta de varias pantallas:
-| ![Simulador1](https://github.com/diegoao/PracticaVisionProDiegoAndrades/blob/main/ImágenesReadme/foto1.png) | ![Simulador2](https://github.com/diegoao/PracticaVisionProDiegoAndrades/blob/main/ImágenesReadme/foto2.png) | ![Simulador3](https://github.com/diegoao/PracticaVisionProDiegoAndrades/blob/main/ImágenesReadme/foto3.png) || 
-| --- | --- | --- |
+| ![Simulador1](https://github.com/diegoao/PracticaVisionProDiegoAndrades/blob/main/ImágenesReadme/foto1.png) | ![Simulador2](https://github.com/diegoao/PracticaVisionProDiegoAndrades/blob/main/ImágenesReadme/foto2.png) | ![Simulador3](https://github.com/diegoao/PracticaVisionProDiegoAndrades/blob/main/ImágenesReadme/foto3.png) |
+| --- | --- | --- | 
 | 1 | 2 | 3 |
 
 ```
