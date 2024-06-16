@@ -27,9 +27,8 @@ https://developer.marvel.com
 ## Información
 
 La práctica consta de varias pantallas:
-| ![Simulador1](https://github.com/diegoao/AppDesarrolloSeguroDiegoAndrades/blob/main/Screenshots%20Readme/imagen1.png) | ![Simulador2](https://github.com/diegoao/AppDesarrolloSeguroDiegoAndrades/blob/main/Screenshots%20Readme/imagen2.png) | ![Simulador3](https://github.com/diegoao/AppDesarrolloSeguroDiegoAndrades/blob/main/Screenshots%20Readme/imagen3.png) | ![Simulador4](https://github.com/diegoao/AppDesarrolloSeguroDiegoAndrades/blob/main/Screenshots%20Readme/imagen4.png) |
-| --- | --- | --- | --- | 
-| 1 | 2 | 3 | 4 |
+| ![Simulador1](https://github.com/diegoao/PracticaVisionProDiegoAndrades/blob/main/ImágenesReadme/foto1.png) | ![Simulador2](https://github.com/diegoao/PracticaVisionProDiegoAndrades/blob/main/ImágenesReadme/foto2.png) | ![Simulador3](https://github.com/diegoao/PracticaVisionProDiegoAndrades/blob/main/ImágenesReadme/foto3.png) | | --- | --- | --- |
+| 1 | 2 | 3 |
 
 ```
 1. Pantalla de intro de la app, se han
