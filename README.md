@@ -1,4 +1,4 @@
-# Práctica PrácticaVisionPro
+# Práctica Reality Kit y VisionOS
 
 Práctica realizada para el módulo de Programación Reality Kit y VisionOS por Diego Andrades.
 
