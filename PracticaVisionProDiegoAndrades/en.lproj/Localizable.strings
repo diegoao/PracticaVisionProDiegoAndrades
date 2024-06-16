@@ -8,8 +8,11 @@
 
 /// Traducciones en ingles
 "title1" = "LIST OF HEROES";
-"title2" = "HERO DETAIL";
+"title2" = "LIST OF SERIES";
 "Description" = "DESCRIPTION";
 "notdescription" = "This hero has no description";
 "back" = "Back";
 "notseries" = "There are no series";
+"selectHero" = "Selec a Hero";
+"message" = "Select a hero by tapping to load their details";
+"noDATA" = "No Data";

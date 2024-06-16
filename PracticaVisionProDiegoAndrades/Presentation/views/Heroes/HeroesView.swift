@@ -14,9 +14,6 @@ struct HeroesView: View {
     
     @EnvironmentObject var appState: AppState
     @StateObject var viewModel: HerosViewModel
-    
-    
-    
     @State private var selectedHero: Result?
     
     var body: some View {
@@ -32,12 +29,11 @@ struct HeroesView: View {
                                     .listRowBackground(Color.white.opacity(0))
                             }
                             .tag(hero)
-                            .id(1)
                         }
                     }
                 }
-                .navigationTitle("Lista de Héroes")
-                .id(2)
+                .navigationTitle("title1")
+                .id(1)
             } content: {
                 VStack{
                     if let hero = selectedHero {
@@ -49,7 +45,6 @@ struct HeroesView: View {
                                         .resizable()
                                         .frame(minHeight: 300, maxHeight: 400)
                                         .cornerRadius(20)
-                                        .id(4)
                                     
                                 } placeholder: {
                                     ProgressView()
@@ -58,14 +53,13 @@ struct HeroesView: View {
                             if hero.description.count == 0 {
                                 VStack{
                                     //description del hero empty
-                                    Text("Este héroe no tiene descripción.")
-                                        .id(5)
+                                    Text("notdescription")
+                                    
                                 }
                             }else{
                                 VStack{
                                     //description del hero
                                     Text(hero.description)
-                                        .id(6)
                                 }
                             }
                             Spacer()
@@ -74,8 +68,8 @@ struct HeroesView: View {
                         .font(.title)
                     } else {
                         //Vista sin contenido
-                        ContentUnavailableView("Selecciona un heroe", systemImage: "person.fill", description: Text("Seleccione un héroe haciendo Tap para cargar sus detalles"))
-                            .id(7)
+                        ContentUnavailableView("selectHero", systemImage: "person.fill", description: Text("message"))
+                            .id(2)
                     }
                 }
             } detail: {
@@ -90,15 +84,13 @@ struct HeroesView: View {
                                             SeriesRowView(serie: series)
                                                 .frame(maxWidth: .infinity, alignment: .center) // Centra el contenido
                                         }
-                                        .id(8)
                                     }
                                 }else{
-                                    ContentUnavailableView("No hay series para este personaje", systemImage: "xmark.icloud.fill")
+                                    ContentUnavailableView("notseries", systemImage: "xmark.icloud.fill")
                                 }
                                 
                             } else {
                                 Text("notseries")
-                                    .id(9)
                             }
                         }
                         .onChange(of: hero, { oldValue, newValue in
@@ -109,11 +101,12 @@ struct HeroesView: View {
                         }
                         
                     } else {
-                        ContentUnavailableView("Sin Datos", systemImage: "xmark.icloud.fill")
-                            .id(10)
+                        ContentUnavailableView("noDATA", systemImage: "xmark.icloud.fill")
+                            .id(3)
                     }
                 }
-                .navigationTitle("Listado de Series")
+                .navigationTitle("title2")
+                .id(4)
             }
             // ------------------------------
             // Reality Kit para cargar sonido
@@ -153,5 +146,6 @@ struct HeroesView: View {
         .environmentObject(AppState())
     
 }
+
 
 

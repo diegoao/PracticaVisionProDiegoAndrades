@@ -61,3 +61,4 @@ struct SeriesRowView: View {
         thumbnail: Thumbnail1(path: "http://i.annihil.us/u/prod/marvel/i/mg/6/10/5d92452f1ab25",
                               thumbnailExtension: .jpg)))
 }
+

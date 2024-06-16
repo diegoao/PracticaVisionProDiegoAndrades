@@ -23,11 +23,13 @@ struct HerosRowView: View {
                                 .fill(MarvelAppColor().TextColor2.opacity(0.8))
                                 .frame(width:250, height: 70)
                                 .cornerRadius(30)
+                                .id(0)
                         }else{
                             Rectangle()
                                 .fill(MarvelAppColor().TextColor2.opacity(0.8))
                                 .frame(width:250, height: 35)
                                 .cornerRadius(30)
+                                .id(0)
                         }
                         Text("\(hero.name)")
                             .font(MarvelApFonts().textM)
@@ -79,3 +81,4 @@ struct HerosRowView: View {
                     )
     )
 }
+
